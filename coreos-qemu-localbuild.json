@@ -1,8 +1,8 @@
 {
   "variables": {
     "coreos_channel": "alpha",
-    "coreos_version": "766.0.0",
-    "iso_checksum": "e8da63e79906ce70bfdbe575349d42b9",
+    "coreos_version": "1284.2.0",
+    "iso_checksum": "f29461370e294f066ffb8efeeb6b5e15",
     "iso_checksum_type": "md5",
     "install_headless": "false",
     "install_target": "/dev/vda",
@@ -36,7 +36,7 @@
       "ssh_port": 22,
       "ssh_wait_timeout": "40m",
       "ssh_username": "core",
-      "ssh_key_path": "files/vagrant",
+      "ssh_private_key_file": "files/vagrant",
       "shutdown_command": "sudo -S shutdown -P now",
       "output_directory": "builds/coreos-{{user `coreos_channel`}}-{{user `coreos_version`}}-qemu"
     }

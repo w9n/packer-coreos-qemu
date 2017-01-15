@@ -3,8 +3,8 @@
 
 Vagrant.require_version '>= 1.6.0'
 
-require_relative 'change_host_name.rb'
-require_relative 'configure_networks.rb'
+require_relative 'scripts/change_host_name.rb'
+require_relative 'scripts/configure_networks.rb'
 
 Vagrant.configure('2') do |config|
   # SSH in as the default 'core' user, it has the vagrant ssh key.
